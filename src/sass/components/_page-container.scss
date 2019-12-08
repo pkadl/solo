@@ -1,0 +1,385 @@
+@import 'page-calendar';
+
+.page-header {
+  width: 100%;
+  height: 48px;
+  background: white;
+  border-bottom: 1px solid $border-color;
+  line-height: 46px;
+  padding-left: 15px;
+  color: $sidebar-txt;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+
+.page-container {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-content {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.table-2col {
+  @include flex-row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.table-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 40%;
+}
+
+.table-row {
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 9px 0;
+
+  &:hover {
+    background: $background-content;
+
+    .table-row--icons {
+      visibility: visible;
+    }
+  }
+}
+
+.table-row--txt {
+  color: $sidebar-txt;
+  font-weight: bold;
+}
+
+.table-row--amount {
+  color: $main-dark;
+}
+
+.table-simple {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 55px 15px 0 0;
+}
+
+.buttons-wrapper {
+  @include flex-row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 25px 22% 15px 22%;
+}
+
+.graph-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 25px 10% 15px 10%;
+}
+
+.graph {
+  width: 100%;
+  height: 100%;
+}
+
+.page-table {
+  width: 97%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.table-row--heading {
+  @include flex-row;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-between;
+  padding: 9px 0;
+  height: 60px;
+  align-items: center;
+
+  .table-row--txt {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    padding: 0 8px;
+    font-size: 11px;
+    white-space: nowrap;
+
+    .incell-icon {
+      visibility: hidden;
+      font-family: $icon-font;
+      color: $sidebar-txt;
+      font-size: 9px;
+    }
+
+    &:hover {
+      background: $background-content;
+      color: $main-dark;
+
+      .incell-icon {
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.table-row--specific {
+  @include flex-row;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-between;
+  padding: 9px 0;
+  height: 60px;
+  align-items: center;
+
+  &:hover {
+    background: $background-content;
+  }
+
+  .table-row--amount {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+}
+
+.table-row--heading, .table-row--specific {
+  .cell-1 {
+    width: 11.8409%;
+  }
+
+  .cell-2 {
+    width: 11.8409%;
+  }
+
+  .cell-3 {
+    width: 7.5909%;
+  }
+  
+  .cell-6 {
+    width: 5.5%;
+  }
+  
+  .cell-7 {
+    width: 10%;
+  }
+
+  .cell-11 {
+    width: 6%;
+  }
+
+}
+
+.table-row--link {
+  color: $main-dark;
+  width: 40%;
+}
+
+.table-row--icons {
+  font-family: $icon-font;
+  visibility: hidden;
+}
+
+.table-row--links {
+  height: 50px;
+  padding-left: 12px;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 18px;
+  text-align: left;
+  align-items: center;
+
+  .table-row--link-edit {
+    color: $hover-light;
+  }
+
+  .table-row--txt {
+    width: 35%;
+  }
+
+}
+
+.table-row--a {
+  font-size: 16px;
+}
+
+.next-pages {
+  @include flex-row;
+  padding-top: 25px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  //line-height: 50px;
+
+  .next-pages--nr {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    //line-height: 40px;
+    padding: 0 8px;
+    font-size: 11px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $link-color;
+
+    &:hover {
+      background: $background-content;
+      color: $main-dark;
+    }
+  }
+}
+
+.page-form-wrapper {
+  @include flex-row;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.table-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+
+  .table-form-row {
+    @include flex-row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+
+    .table-form-cell {
+      color: $sidebar-txt;
+      letter-spacing: -1px;
+      font-weight: bold;
+      width: 30%;
+    }
+
+    .table-form-input {
+      width: 70%;
+
+      input {
+        border-radius: 4px;
+        border: solid 1px $border-color;
+        width: 305px;
+        height: 39px;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.page-form-txt {
+  width: 99%;
+  justify-content: center;
+  display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.table-form-txt {
+  @include flex-row;
+  width: 100%;
+  justify-content: space-between;
+
+  .form-column {
+    padding: 5px;
+    width: 100%;
+  }
+
+  .table-row--txt {
+    width: 100%;
+    padding: 7px 8px;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 185px;
+    border-radius: 4px;
+    border: solid 1px $border-color;
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    //background-color: #ffffff;
+    border: 1px solid $border-color;
+    padding: 5px 30px 5px 10px;
+    font-size: 14px;
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    background-image: url('images/down.jpg');
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+  }
+}
+
+@media (max-width: 470px) { 
+  .table-row--txt, .table-row--amount {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1024px) { 
+  .table-row--heading {
+    .table-row--txt {
+      font-size: 10px;
+      padding: 0 3px;
+
+      .incell-icon {
+        visibility: visible !important;
+      }
+    }
+  }
+}
+@media (max-width: 569px) { 
+  .page-content {
+    width: 90%;
+  }
+
+  .table-row--a {
+    letter-spacing: -0.5px;
+    font-size: 13px;
+  }
+
+  .table-row--link {
+    width: 61%;
+  
+  }
+
+  .table-row--links {
+    .table-row--txt {
+      width: 18%;
+      font-size: 12px !important;
+    }
+
+    .table-row--icons {
+      font-size: 13px;
+    }
+  }
+}

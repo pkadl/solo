@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contener-main">
+        <div class="section-topbar">
+            <div class="section-topbar__logo"> 
+                <div class="logo-txt">Just do it</div>
+                <div class="topbar-hamburger-wrapper">
+                    <div class="topbar-hamburger"></div>
+                    <div class="topbar-hamburger"></div>
+                    <div class="topbar-hamburger"></div>
+                </div>
+            </div>
+            <div class="section-topbar__right"> 
+                <div class="topbar-cash">b <span class="cash-txt"> $1,500.00 </span> <span class="icon-small"> A</span></div>
+                <div class="topbar-icon topbar-icon-dot">P</div>
+                <div class="topbar-logged">V <a href="#"> Leonardo DiCaprio</a></div>
+                <div class="topbar-icon">W</div>
+            </div>
+        </div>
+        <div class="section-menu-content">
+            <div class="section-sidebar">
+                <div class="sidebar__row" name="general">
+                    <div class="sidebar__row--icon">K</div>
+                    <div class="sidebar__row--txt">General</div>
+                </div>
+                <div class="sidebar__row" name="details">
+                    <div class="sidebar__row--icon">J</div>
+                    <div class="sidebar__row--txt">Details</div>
+                </div>
+                <div class="sidebar__row" name="links">
+                    <div class="sidebar__row--icon">L</div>
+                    <div class="sidebar__row--txt">Links</div>
+                </div>
+                <div class="sidebar__row" name="banners">
+                    <div class="sidebar__row--icon">G</div>
+                    <div class="sidebar__row--txt">Banners</div>  
+                </div>
+                <div class="sidebar__row" name="personal_data">
+                    <div class="sidebar__row--icon">M</div>
+                    <div class="sidebar__row--txt sidebar__row--txt-long">Personal Data</div>
+                </div>
+                <div class="sidebar__row" name="payout">
+                    <div class="sidebar__row--icon">T</div>
+                    <div class="sidebar__row--txt">Payout</div>
+                </div>
+                <div class="sidebar__row" name="postback">
+                    <div class="sidebar__row--icon">U</div>
+                    <div class="sidebar__row--txt">Postback</div>
+                </div>
+                <div class="logged-user">
+                    YOUR MANAGER
+                    <div class="manager-icon--wrapper">
+                        <div class="img-container">
+                        <img src="images/ziomek_small.jpg"/>
+                        </div> 
+                        <div class="a-medium">
+                        Michael E.
+                        </div>
+                    </div>
+                </div>
+                <div class="section-topbar__right--mobile"> 
+                    <div class="topbar-cash">b <span class="cash-txt"> $1,500.00 </span> <span class="icon-small"> A</span></div>
+                    <div class="topbar-icon topbar-icon-dot">P</div>
+                    <div class="topbar-logged">V <a href="#" class="a-tight"> Leonardo DiCaprio</a></div>
+                    <div class="topbar-icon">W</div>
+                </div>
+            </div>
+            <div class="section-right">
+                <!-- container with variable content --> 
+                <div class="content-container content-container--active" id="general"> 
+                   <div class="page-header">
+                        GENERAL STATISTIC
+                    </div>
+                     <div class="page-calendar--wrapper">
+                        <div class="input-wrapper">
+                            <input type="date" value="2019-12-04" class="input-calendar input-adjacent">
+                            <input type="date" value="2019-12-04" class="input-calendar">
+                            <div class="icon-font icon-style">H </div>
+                        </div>
+                        <button class="btn-refresh">X</button>
+                    </div> 
+                    <div class="page-container"> 
+                        <div class="page-content">
+                            <div class="table-2col">
+                                <div class="table-column">
+                                    <div class="table-row">
+                                        <div class="table-row--txt">Visit Signups</div>
+                                        <div class="table-row--amount">124</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-row--txt">FTD</div>
+                                        <div class="table-row--amount">445</div>
+                                    </div>
+                                </div>
+                                <div class="table-column">
+                                    <div class="table-row">
+                                        <div class="table-row--txt">Net deposit</div>
+                                        <div class="table-row--amount">564</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table-row--txt">Turnover</div>
+                                        <div class="table-row--amount">432</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="table-simple">
+                                <div class="table-row--txt">
+                                    Earning charts
+                                </div>
+                            </div>
+                            <div class="buttons-wrapper">
+                                <button class="btn--dot-blue">Signups</button>
+                                <button class="btn--dot-orange">FTD</button>
+                                <button class="btn--dot-green">Earning</button>
+                            </div>
+                            <div class="graph-wrapper">
+                                <img src="images/graph.jpg" class="graph" alt="wykres"/>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="content-container" id="details"> 
+                    <div class="page-header">
+                        DETAILS
+                    </div>
+                    <div class="page-calendar--wrapper">
+                        <div class="input-wrapper">
+                            <input type="date" value="2019-12-04" class="input-calendar input-adjacent">
+                            <input type="date" value="2019-12-04" class="input-calendar">
+                            <div class="icon-font icon-style">H </div>
+                        </div>
+                        <button class="btn-refresh">X</button>
+                    </div> 
+                    <div class="page-container"> 
+                        <div class="page-table">
+                            <div class="table-row--heading">
+                                <div class="table-row--txt cell-1">Tracker name 
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-2">Initiated date
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-3">Visits
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-3">Uniques
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-3">Signups
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-6">FTD
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-7">Depositors
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-7">Deposit ($)
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-7">Payout ($)
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-7">Turnover
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-11">Deal
+                                    <span class="incell-icon">E</span>
+                                </div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">aff sam/test</div>
+                                <div class="table-row--amount cell-2">08/12 (12:20)</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-3">564</div>
+                                <div class="table-row--amount cell-6">5</div>
+                                <div class="table-row--amount cell-7">4</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564</div>
+                                <div class="table-row--amount cell-7">564,98</div>
+                                <div class="table-row--amount cell-11">cpl20</div>
+                            </div>
+                        </div>
+                        <div class="center_wrapper">
+                            <div class="next-pages">
+                                <div class="next-pages--nr"><span class="icon-font">C</span></div>
+                                <div class="next-pages--nr">1</div>
+                                <div class="next-pages--nr">2</div>
+                                <div class="next-pages--nr">3</div>
+                                <div class="next-pages--nr">4</div>
+                                <div class="next-pages--nr">5</div>
+                                <div class="next-pages--nr">6</div>
+                                <div class="next-pages--nr">7</div>
+                                <div class="next-pages--nr">8</div>
+                                <div class="next-pages--nr">9</div>
+                                <div class="next-pages--nr"><span class="icon-font">D</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container" id="links"> 
+                    <div class="page-header">
+                        LINKS
+                    </div>
+                    <div class="page-container"> 
+                        <div class="page-content">
+                            <div class="center-wrapper">
+                                <button class="btn-add"> + 
+                                    <span class="inbtn-txt"> add link</span>
+                                </button>
+                            </div>
+                            <div class="table-row table-row--links">
+                                <div class="table-row--txt">Home Page</div>
+                                <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                            </div>
+                            <div class="table-row table-row--links">
+                                <div class="table-row--txt">Kodilla</div>
+                                <div class="table-row--link"><a class="table-row--a">https://kodilla.com/</a></div>
+                                <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                            </div>
+                            <div class="table-row table-row--links">
+                                <div class="table-row--txt">Home Page</div>
+                                <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                            </div>
+                            <div class="table-row table-row--links">
+                                <div class="table-row--txt">Kodilla Page</div>
+                                <div class="table-row--link"><a class="table-row--a">https://kodilla.com/</a></div>
+                                <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                            </div>
+                            <div class="table-row table-row--links">
+                                <div class="table-row--txt">Home Page</div>
+                                <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                            </div>
+                            <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Google</div>
+                                    <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                            <div class="center-wrapper">
+                                <button class="btn-add"> + 
+                                        <span class="inbtn-txt"> add link</span></button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="content-container" id="banners"> 
+                    <div class="page-header">
+                        BANNERS
+                    </div>
+                    <div class="page-container"> 
+                            <div class="page-content">
+                                <div class="center-wrapper">
+                                    <button class="btn-add"> + 
+                                        <span class="inbtn-txt"> add new</span>
+                                    </button>
+                                </div>
+                                <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Banner Main</div>
+                                    <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                                <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Kodilla Banner</div>
+                                    <div class="table-row--link"><a class="table-row--a">https://kodilla.com/</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                                <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Banner Page</div>
+                                    <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                                <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Banner extra</div>
+                                    <div class="table-row--link"><a class="table-row--a">https://kodilla.com/</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                                <div class="table-row table-row--links">
+                                    <div class="table-row--txt">Home Banner</div>
+                                    <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                    <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                </div>
+                                <div class="table-row table-row--links">
+                                        <div class="table-row--txt">Banner Google</div>
+                                        <div class="table-row--link"><a class="table-row--a">http://www.google.com</a></div>
+                                        <div class="table-row--icons"><span class="table-row--link-edit">L</span> Z</div>
+                                    </div>
+                                <div class="center-wrapper">
+                                    <button class="btn-add"> + 
+                                            <span class="inbtn-txt"> add new</span></button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                <div class="content-container" id="personal_data"> 
+                    <div class="page-header">
+                        PERSONAL DATA
+                    </div>
+                    <div class="page-form-wrapper">
+                        <div class="table-form">
+                            <div class="table-form-row"> <div class="table-form-cell">Name</div> <div class="table-form-input"><input type="text" placeholder="Leonardo"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">Surname</div> <div class="table-form-input"><input type="text" placeholder="DiCaprio"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">E-mail</div> <div class="table-form-input"><input type="email" placeholder="leo@gmail.com"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">Phone number</div> <div class="table-form-input"><input type="text" placeholder="+48 775 333 222"></div></div>
+                        </div>
+                    </div>
+                    <div class="page-form-wrapper">
+                        <div class="table-form">
+                            <div class="table-form-row"> <div class="table-form-cell">Skype</div> <div class="table-form-input"><input type="text" placeholder="Leonardo.D"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">ICQ</div> <div class="table-form-input"><input type="text"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">MSN</div> <div class="table-form-input"><input type="text"></div></div>
+                        </div>
+                    </div>
+                    <div class="page-form-wrapper">
+                            <div class="table-form">
+                                <div class="table-form-row"> <div class="table-form-cell">Wallet</div> <div class="table-form-input"><input type="text"></div></div>
+                            </div>
+                        </div>
+                    <div class="page-form-wrapper">
+                        <div class="table-form">
+                            <div class="table-form-row"> <div class="table-form-cell">Password</div> <div class="table-form-input"><input type="text"></div></div>
+                            <div class="table-form-row"> <div class="table-form-cell">Repeat</div> <div class="table-form-input"><input type="text"></div></div>
+                        </div>
+                    </div>
+                    <div class="center-wrapper">
+                        <button class="btn-add">
+                            <span class="inbtn-txt">Save</span>
+                        </button>
+                    </div>
+
+
+                    
+                </div>
+                <div class="content-container" id="payout"> 
+                    <div class="page-header">
+                        PAYOUT
+                    </div>
+                    <div class="page-calendar--wrapper">
+                        <div class="input-wrapper">
+                            <input type="date" value="2019-12-04" class="input-calendar input-adjacent">
+                            <input type="date" value="2019-12-04" class="input-calendar">
+                            <div class="icon-font icon-style">H </div>
+                        </div>
+                        <button class="btn-refresh">X</button>
+                    </div> 
+                    <div class="page-container"> 
+                        <div class="page-table">
+                            <div class="table-row--heading">
+                                <div class="table-row--txt cell-1">Date 
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-2">Amount ($)
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-3">Deal
+                                    <span class="incell-icon">E</span>
+                                </div>
+                                <div class="table-row--txt cell-3">Account
+                                    <span class="incell-icon">E</span>
+                                </div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">08-12-2019</div>
+                                <div class="table-row--amount cell-2">29,345.21</div>
+                                <div class="table-row--amount cell-3">cpl200</div>
+                                <div class="table-row--amount cell-3">bank</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">08-12-2019</div>
+                                <div class="table-row--amount cell-2">29,345.21</div>
+                                <div class="table-row--amount cell-3">cpl200</div>
+                                <div class="table-row--amount cell-3">bank</div>
+                            </div>
+                            <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">08-12-2019</div>
+                                <div class="table-row--amount cell-2">29,345.21</div>
+                                <div class="table-row--amount cell-3">cpl200</div>
+                                <div class="table-row--amount cell-3">bank</div>
+                            </div>
+                                                        <div class="table-row--specific">
+                                <div class="table-row--amount cell-1">08-12-2019</div>
+                                <div class="table-row--amount cell-2">29,345.21</div>
+                                <div class="table-row--amount cell-3">cpl200</div>
+                                <div class="table-row--amount cell-3">bank</div>
+                            </div>
+                        </div>
+                        <div class="center_wrapper">
+                            <div class="next-pages">
+                                <div class="next-pages--nr"><span class="icon-font">C</span></div>
+                                <div class="next-pages--nr">1</div>
+                                <div class="next-pages--nr">2</div>
+                                <div class="next-pages--nr">3</div>
+                                <div class="next-pages--nr">4</div>
+                                <div class="next-pages--nr">5</div>
+                                <div class="next-pages--nr">6</div>
+                                <div class="next-pages--nr">7</div>
+                                <div class="next-pages--nr">8</div>
+                                <div class="next-pages--nr">9</div>
+                                <div class="next-pages--nr"><span class="icon-font">D</span></div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="content-container" id="postback"> 
+                    <div class="page-header">
+                        POSTBACK
+                    </div>
+                    <div class="page-container">
+                        <div class="page-form-txt">
+                            fsfdsfd
+                            dsfdsnm
+                            2432412
+                            <div class="table-form-txt">
+                                <div class="form-column">
+                                    <div class="table-row--txt"> Signup</div>
+                                    <div class="table-row--txt"> <textarea>crm_userID</textarea> </div>
+                                </div>
+                                <div class="form-column">
+                                    <div class="table-row--txt"> Deposit </div>
+                                    <div class="table-row--txt"> <textarea>crm_userworld</textarea> </div>
+                                </div>
+                            </div>
+                            <div class="table-form-txt">
+                                <div class="form-column">
+                                    <div class="table-row--txt"> Postback type</div>
+                                    <div class="table-row--txt"> 
+                                        <select name="postbacktype" form="postback">
+                                            <option value="s2">S2S http://</option>
+                                            <option value="s2s">S2S http://</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-column">
+                                    <div class="table-row--txt"> To countries </div>
+                                    <div class="table-row--txt"> <textarea>crm_userworld</textarea> </div>
+                                </div>
+                                 <div class="form-column">
+                                    <div class="table-row--txt"> Sending options</div>
+                                    <div class="table-row--txt"> <textarea>crm_userworld</textarea> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.page-calendar--wrapper {
+  @include flex-row;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 0;
+  background: white;
+  border-bottom: 1px solid $border-color;
+  color: $sidebar-txt;
+  letter-spacing: -1px;
+  font-weight: 500;
+
+  .input-wrapper {
+    @include flex-row;
+    border-radius: 3px;
+    border: 1px solid $border-color;
+    padding: 8px;
+    align-items: center;
+    padding-right: 14px;
+  }
+
+  .input-calendar {
+    border: none;
+    padding: 6px;
+    padding-left: 14px;
+    font-size: 14px;
+  }
+
+  .input-adjacent {
+    border-right: solid 1px $border-color !important;
+  }
+
+  .icon-wrapper {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 470px) { 
+  .page-calendar--wrapper {
+    padding: 20px 3px !important;
+
+    .input-wrapper {
+      padding: 2px !important;
+      padding-right: 6px !important;
+    }
+
+    .input-calendar {
+      padding: 2px !important;
+      //padding-left: 14px;
+      font-size: 11px !important;
+    }
+  }
+}

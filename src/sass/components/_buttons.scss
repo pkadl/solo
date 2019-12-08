@@ -1,0 +1,121 @@
+button:hover {
+  color: $hover-light;
+}
+
+.btn-refresh {
+  background: $hover-light;
+  border-radius: 4px;
+  font-family: $icon-font;
+  color: $background-main;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 13px;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.btn-add{
+  background: $hover-light;
+  border-radius: 4px;
+  font-family: $icon-font;
+  color: $background-main;
+  border: none;
+  width: 105px;
+  height: 50px;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.center-wrapper {
+  @include flex-row;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.btn--dot-blue, .btn--dot-orange {  
+  border-radius: 4px;
+  padding: 12px;
+  padding-left: 30px;
+  color: $sidebar-txt;
+}
+
+.btn--dot-blue {
+  border: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: $link-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    border-radius: 50%;
+  }
+}
+
+.btn--dot-orange {
+  border: none;
+  position: relative;
+  
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: $hover-light;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    border-radius: 50%;
+  }
+}
+
+.btn--dot-green {
+  background: inherit;
+  border: none;
+  position: relative;
+  padding: 12px;
+  padding-left: 30px;
+  color: $link-color;
+  
+  &::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: $active-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+    border-radius: 50%;
+  }  
+}
+
+.inbtn-txt {
+  font-family: $brand-font;
+}
+
+@media (max-width: 413px) { 
+  .btn--dot-blue, .btn--dot-orange, .btn--dot-green {
+    padding: 3px !important;
+    font-size: smaller;
+    padding-left: 25px !important;
+  }
+}
+
+@media (max-width: 470px) { 
+  .btn-refresh {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 2px !important;
+  }
+}

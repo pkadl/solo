@@ -1,0 +1,19 @@
+/*main layout */
+
+.contener-main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* global */
+html {
+  font-family: $brand-font;
+  overflow-y: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

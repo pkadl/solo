@@ -1,0 +1,97 @@
+.logo-txt {
+  font-family: Reklame;
+  color: $background-main;
+  font-size: 22px;
+  height: 100%;
+  line-height: 60px;
+}
+
+.topbar-hamburger-wrapper {
+  line-height: 60px;
+  align-items: center;
+}
+
+.topbar-hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: $sidebar-txt;
+  margin: 5px 0;
+}
+
+.topbar-icon, .topbar-cash, .topbar-logged {
+  line-height: 56px;
+  text-align: center;
+  font-family: Glyphter;
+
+  &:hover {
+    background-color: $background-content;
+    cursor: pointer;
+  }
+}
+
+.topbar-icon {
+  width: 100%;
+  max-width: 60px;
+  height: 100%;
+  position: relative;
+}
+
+.topbar-icon-dot::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 31%;
+  left: 51%;
+  background: $hover-light;
+}
+
+.topbar-cash {
+  @include border-col;
+  width: 100%;
+  max-width: 186px;
+  height: 100%;
+}
+
+.topbar-logged {
+  @include border-col;
+  width: 100%;
+  max-width: 173px;
+  height: 100%;
+}
+
+.topbar-logged, .topbar-cash {
+  @include flex-row;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cash-txt {
+  font-size: 20px;
+  font-family: $brand-font;
+}
+
+.icon-small {
+  font-size: 10px;
+}
+
+@media (max-width: 470px) { 
+  .cash-txt {
+    font-size: 14px !important;
+  }
+
+  .topbar-icon {
+    max-width: 40px !important;
+  }
+
+  .topbar-logged, .topbar-cash {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .a-tight {
+    letter-spacing: -1.25px;
+  }
+}

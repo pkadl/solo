@@ -1,0 +1,22 @@
+a {
+  color: $link-color;
+  font-family: $brand-font;
+  text-decoration: none;
+  font-size: 12px;
+
+  &:hover {
+    color: $hover-light;
+  }
+}
+
+.a-medium {
+  color: $link-color;
+  font-family: $brand-font;
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    color: $hover-light;
+    cursor: pointer;
+  }
+}
