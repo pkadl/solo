@@ -104,6 +104,38 @@ button:hover {
   font-family: $brand-font;
 }
 
+.btn-close {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  border-radius: 5px;
+  width: 29px;
+  height: 29px;
+  border: none;
+  background: white;
+  line-height: 20px;
+  align-items: center;
+  
+
+  &:hover {
+    border: solid 1px $border-color;
+    background: $border-color;
+  }
+}
+
+.btn-modal {
+  background: $hover-light;
+  border-radius: 4px;
+  color: $background-main;
+  border: none;
+  width: fit-content;
+  height: 50px;
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
 @media (max-width: 413px) { 
   .btn--dot-blue, .btn--dot-orange, .btn--dot-green {
     padding: 3px !important;

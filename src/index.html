@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin dashboard</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,31 +26,31 @@
         </div>
         <div class="section-menu-content">
             <div class="section-sidebar">
-                <div class="sidebar__row" name="general">
+                <div class="sidebar__row" data-link="general">
                     <div class="sidebar__row--icon">K</div>
                     <div class="sidebar__row--txt">General</div>
                 </div>
-                <div class="sidebar__row" name="details">
+                <div class="sidebar__row" data-link="details">
                     <div class="sidebar__row--icon">J</div>
                     <div class="sidebar__row--txt">Details</div>
                 </div>
-                <div class="sidebar__row" name="links">
+                <div class="sidebar__row" data-link="links">
                     <div class="sidebar__row--icon">L</div>
                     <div class="sidebar__row--txt">Links</div>
                 </div>
-                <div class="sidebar__row" name="banners">
+                <div class="sidebar__row" data-link="banners">
                     <div class="sidebar__row--icon">G</div>
                     <div class="sidebar__row--txt">Banners</div>  
                 </div>
-                <div class="sidebar__row" name="personal_data">
+                <div class="sidebar__row" data-link="personal_data">
                     <div class="sidebar__row--icon">M</div>
                     <div class="sidebar__row--txt sidebar__row--txt-long">Personal Data</div>
                 </div>
-                <div class="sidebar__row" name="payout">
+                <div class="sidebar__row" data-link="payout">
                     <div class="sidebar__row--icon">T</div>
                     <div class="sidebar__row--txt">Payout</div>
                 </div>
-                <div class="sidebar__row" name="postback">
+                <div class="sidebar__row" data-link="postback">
                     <div class="sidebar__row--icon">U</div>
                     <div class="sidebar__row--txt">Postback</div>
                 </div>
@@ -57,10 +58,42 @@
                     YOUR MANAGER
                     <div class="manager-icon--wrapper">
                         <div class="img-container">
-                        <img src="images/ziomek_small.jpg"/>
+                        <img src="images/ziomek_small.jpg" alt="user"/>
                         </div> 
-                        <div class="a-medium">
-                        Michael E.
+                        <div class="a-medium" id="modal_chat">
+                            Michael E.
+                        </div>
+                        <div class="overlay" id="overlay">
+                            <div class="modal" id="myModal">
+                                <!-- <div class="modal-container"> -->
+                                    <div class="page-header">
+                                        ONLINE CHAT WITH YOUR MANAGER
+                                        <button class="btn-close js--close-modal">
+                                            x
+                                        </button>
+                                    </div>
+                                    <div class="modal-paragraph">
+                                         <div class="modal-manager"> 
+                                             <div class="modal-img-manager">
+                                                 <img src="../images/ziomek.jpg" class="" alt="manager-img">
+                                             </div>
+                                             <div class="modal-manager-column">
+                                                 <div class="modal-manager-row">Michael E.</div>
+                                                 <div class="modal-manager-row">
+                                                     <div class="manager-online">online</div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                    </div>
+                                    <div class="modal-paragraph--chat modal-chat-inner">
+                                        enter the message below
+                                </div>
+                                <div class="modal-paragraph--chat">
+                                    <input type="text" class="modal-chat-input" placeholder="N ...">
+                                    <button type="submit" class="modal-chat-submit btn-modal">Send</button>
+                                    <button class="js--close-modal btn-modal">Close chat</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,13 +149,9 @@
                                     Earning charts
                                 </div>
                             </div>
-                            <div class="buttons-wrapper">
-                                <button class="btn--dot-blue">Signups</button>
-                                <button class="btn--dot-orange">FTD</button>
-                                <button class="btn--dot-green">Earning</button>
-                            </div>
+                            
                             <div class="graph-wrapper">
-                                <img src="images/graph.jpg" class="graph" alt="wykres"/>
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
                     </div> 
@@ -435,42 +464,42 @@
                     <div class="page-container"> 
                         <div class="page-table">
                             <div class="table-row--heading">
-                                <div class="table-row--txt cell-1">Date 
+                                <div class="table-row--txt cell-8">Date 
                                     <span class="incell-icon">E</span>
                                 </div>
-                                <div class="table-row--txt cell-2">Amount ($)
+                                <div class="table-row--txt cell-8">Amount ($)
                                     <span class="incell-icon">E</span>
                                 </div>
-                                <div class="table-row--txt cell-3">Deal
+                                <div class="table-row--txt cell-8">Deal
                                     <span class="incell-icon">E</span>
                                 </div>
-                                <div class="table-row--txt cell-3">Account
+                                <div class="table-row--txt cell-8">Account
                                     <span class="incell-icon">E</span>
                                 </div>
                             </div>
                             <div class="table-row--specific">
-                                <div class="table-row--amount cell-1">08-12-2019</div>
-                                <div class="table-row--amount cell-2">29,345.21</div>
-                                <div class="table-row--amount cell-3">cpl200</div>
-                                <div class="table-row--amount cell-3">bank</div>
+                                <div class="table-row--amount cell-8">08-12-2019</div>
+                                <div class="table-row--amount cell-8">29,345.21</div>
+                                <div class="table-row--amount cell-8">cpl200</div>
+                                <div class="table-row--amount cell-8">bank</div>
                             </div>
                             <div class="table-row--specific">
-                                <div class="table-row--amount cell-1">08-12-2019</div>
-                                <div class="table-row--amount cell-2">29,345.21</div>
-                                <div class="table-row--amount cell-3">cpl200</div>
-                                <div class="table-row--amount cell-3">bank</div>
+                                <div class="table-row--amount cell-8">08-12-2019</div>
+                                <div class="table-row--amount cell-8">29,345.21</div>
+                                <div class="table-row--amount cell-8">cpl200</div>
+                                <div class="table-row--amount cell-8">bank</div>
                             </div>
                             <div class="table-row--specific">
-                                <div class="table-row--amount cell-1">08-12-2019</div>
-                                <div class="table-row--amount cell-2">29,345.21</div>
-                                <div class="table-row--amount cell-3">cpl200</div>
-                                <div class="table-row--amount cell-3">bank</div>
+                                <div class="table-row--amount cell-8">08-12-2019</div>
+                                <div class="table-row--amount cell-8">29,345.21</div>
+                                <div class="table-row--amount cell-8">cpl200</div>
+                                <div class="table-row--amount cell-8">bank</div>
                             </div>
                                                         <div class="table-row--specific">
-                                <div class="table-row--amount cell-1">08-12-2019</div>
-                                <div class="table-row--amount cell-2">29,345.21</div>
-                                <div class="table-row--amount cell-3">cpl200</div>
-                                <div class="table-row--amount cell-3">bank</div>
+                                <div class="table-row--amount cell-8">08-12-2019</div>
+                                <div class="table-row--amount cell-8">29,345.21</div>
+                                <div class="table-row--amount cell-8">cpl200</div>
+                                <div class="table-row--amount cell-8">bank</div>
                             </div>
                         </div>
                         <div class="center_wrapper">
@@ -494,11 +523,11 @@
                     <div class="page-header">
                         POSTBACK
                     </div>
+                    <div class="page-form-txt--left">You can insert some parameters to your postback:</div>
                     <div class="page-container">
+                            
                         <div class="page-form-txt">
-                            fsfdsfd
-                            dsfdsnm
-                            2432412
+                            
                             <div class="table-form-txt">
                                 <div class="form-column">
                                     <div class="table-row--txt"> Signup</div>
@@ -513,7 +542,7 @@
                                 <div class="form-column">
                                     <div class="table-row--txt"> Postback type</div>
                                     <div class="table-row--txt"> 
-                                        <select name="postbacktype" form="postback">
+                                        <select name="postbacktype">
                                             <option value="s2">S2S http://</option>
                                             <option value="s2s">S2S http://</option>
                                         </select>
@@ -521,11 +550,28 @@
                                 </div>
                                 <div class="form-column">
                                     <div class="table-row--txt"> To countries </div>
-                                    <div class="table-row--txt"> <textarea>crm_userworld</textarea> </div>
+                                    <div class="table-row--txt"> 
+                                    <select name="postbackcountries">
+                                        <option value="er2">Select countries</option>
+                                        <option value="de4">Chechenya</option>
+                                    </select>
+                                    </div>
                                 </div>
                                  <div class="form-column">
                                     <div class="table-row--txt"> Sending options</div>
-                                    <div class="table-row--txt"> <textarea>crm_userworld</textarea> </div>
+                                    <div class="table-row--txt"> 
+                                    <select name="postbackoptions">
+                                        <option value="w1">Select</option>
+                                        <option value="w2">secured</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-form-txt">
+                                <div class="center-wrapper">
+                                    <button class="btn-add">
+                                        <span class="inbtn-txt">Create Pixel</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -534,6 +580,7 @@
             </div>
         </div> 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

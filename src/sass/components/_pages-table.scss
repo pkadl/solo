@@ -1,0 +1,174 @@
+
+.page-table {
+  width: 97%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.table-row--heading {
+  @include flex-row;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-between;
+  padding: 9px 0;
+  height: 60px;
+  align-items: center;
+
+  .table-row--txt {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    padding: 0 8px;
+    font-size: 11px;
+    white-space: nowrap;
+
+    .incell-icon {
+      visibility: hidden;
+      font-family: $icon-font;
+      color: $sidebar-txt;
+      font-size: 9px;
+    }
+
+    &:hover {
+      background: $background-content;
+      color: $main-dark;
+
+      .incell-icon {
+        visibility: visible;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.table-row--specific {
+  @include flex-row;
+  border-bottom: 1px solid $border-color;
+  justify-content: space-between;
+  padding: 9px 0;
+  height: 60px;
+  align-items: center;
+
+  &:hover {
+    background: $background-content;
+  }
+
+  .table-row--amount {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+}
+
+.table-row--heading, .table-row--specific {
+  .cell-1 {
+    width: 11.8409%;
+  }
+
+  .cell-2 {
+    width: 11.8409%;
+  }
+
+  .cell-3 {
+    width: 7.5909%;
+  }
+  
+  .cell-6 {
+    width: 5.5%;
+  }
+  
+  .cell-7 {
+    width: 10%;
+  }
+  
+  .cell-8 {
+    width: 24%;
+  }
+
+  .cell-11 {
+    width: 6%;
+  }
+
+}
+
+.table-row--link {
+  color: $main-dark;
+  width: 40%;
+}
+
+.table-row--icons {
+  font-family: $icon-font;
+  visibility: hidden;
+}
+
+.table-row--links {
+  height: 50px;
+  padding-left: 12px;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 18px;
+  text-align: left;
+  align-items: center;
+
+  .table-row--link-edit {
+    color: $hover-light;
+  }
+
+  .table-row--txt {
+    width: 35%;
+  }
+
+}
+
+.table-row--a {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) { 
+  .table-row--heading {
+    .table-row--txt {
+      font-size: 10px;
+      padding: 0 3px;
+
+      .incell-icon {
+        visibility: visible !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 569px) { 
+  .page-content {
+    width: 90%;
+  }
+  
+  .table-row--a {
+    letter-spacing: -0.5px;
+    font-size: 13px;
+  }
+  
+  .table-row--link {
+    width: 61%;
+  }
+  
+  .table-row--links {
+    .table-row--txt {
+      width: 18%;
+      font-size: 12px !important;
+    }
+
+    .table-row--icons {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 470px) { 
+  .table-row--txt, .table-row--amount {
+    font-size: smaller;
+  }
+}

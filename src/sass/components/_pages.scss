@@ -1,0 +1,40 @@
+.next-pages {
+  @include flex-row;
+  padding-top: 25px;
+  max-height: 55px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  //line-height: 50px;
+
+  .next-pages--nr {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 8px;
+    font-size: 11px;
+    white-space: nowrap;
+    justify-content: center;
+    text-align: center;
+    color: $link-color;
+
+    &:hover {
+      background: $background-content;
+      color: $main-dark;
+    }
+  }
+}
+
+
+
+@media (max-width: 470px) { 
+  .next-pages {
+    .next-pages--nr {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 4px;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+/* modal elements styles */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  
+  justify-content: center;
+  align-items: center;
+
+  overflow: auto;
+  padding: 30px;
+
+  display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.modal {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  //padding: 30px;
+  display: none;
+}
+  
+.modal.show {
+  display: block;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.modal-paragraph {
+  width: 100%;
+  height: auto;
+  background: white;
+  border-bottom: 1px solid $border-color;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.modal-manager {
+  @include flex-row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.modal-img-manager {
+  width: 15%;
+  min-width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-manager-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 75%;
+  height: 80%;
+}
+
+.modal-manager-row {
+  color: $main-dark;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+.manager-online {
+  border-radius: 4px;
+  background: $active-color;
+  font-size: 11px;
+  color: $background-content;
+  text-align: center;
+  width: 55px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.modal-paragraph--chat {
+  width: 100%;
+  height: auto;
+  background: white;
+  border-bottom: 1px solid $border-color;
+  padding: 15px 15px;
+  text-align: left;
+}
+
+.modal-chat-input {
+  border: solid 1px $border-color;
+  border-radius: 4px;
+  padding: 4px;
+  width: 70%;
+  min-height: 45px;
+  max-height: 55px;
+  position: relative;
+  resize: none;
+  font-size: 15px;
+  line-height: 20px;
+
+  &::placeholder {
+    font-family: $icon-font;
+    font-size: 20px;
+  }
+}
+
+.modal-chat-inner {
+  min-height: 100px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.modal-chat-new-line-manager {
+  border-radius: 4px;
+  background: $link-color;
+  font-size: 11px;
+  color: $background-content;
+  text-align: left;
+  max-width: calc(100% - 14px);
+  width: fit-content;
+  height: 31px;
+  line-height: 25px;
+  padding: 3px 8px;
+  margin-left: 14px;
+  margin-bottom: 5px;
+}
+
+.modal-chat-new-line-me {
+  border-radius: 4px;
+  background: $sidebar-txt;
+  font-size: 11px;
+  color: $background-content;
+  text-align: left;
+  max-width: calc(100% - 14px);
+  width: fit-content;
+  height: 31px;
+  line-height: 25px;
+  padding: 3px 8px;
+  margin-bottom: 5px;
+}
