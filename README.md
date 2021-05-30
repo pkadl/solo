@@ -1,1 +1,1 @@
-# https://piotrek69kk.github.io/solo/
+# https://pkadl.github.io/solo/
